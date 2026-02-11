@@ -1,0 +1,14 @@
+image:
+  repository: nwadocheli/python-api
+  tag: latest
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+
+redis:
+  image: redis:7
+  port: 6379
+
