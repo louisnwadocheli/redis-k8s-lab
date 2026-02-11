@@ -22,4 +22,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: dockerhub-nwadocheli/python-api:latest
+          #tags: dockerhub-nwadocheli/python-api:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/python-api:latest
+
