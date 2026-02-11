@@ -13,7 +13,7 @@ REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
 r = redis.Redis(
     host=REDIS_HOST,
     port=REDIS_PORT,
-    # password=REDIS_PASSWORD,
+    ## password=REDIS_PASSWORD,
     decode_responses=False
 )
 
